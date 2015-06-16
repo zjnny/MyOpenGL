@@ -64,6 +64,7 @@ int CGlView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	CRect rt;
 	GetClientRect(rt);
 	m_wnd.Create(_T("MyGL"),_T("MyGL"),WS_VISIBLE|WS_CHILD,CRect(0,0,100,100),this,111);
+	
 	m_wnd.SetFocus();
 	//m_wnd.ShowWindow(SW_SHOW);
 		// TODO:  在此添加您专用的创建代码

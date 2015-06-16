@@ -6,7 +6,8 @@
 #include "highgui.h"  
 
 #include <opencv2/opencv.hpp>
-//opencv中cvloadimage内存泄漏
+//opencv内存泄漏原因与MFC动态库冲突
+//设置工程为在静态库中使用MFC，或延迟加载CV的动态库（？）
 using namespace cv;
 using namespace std;
 #include <cassert>

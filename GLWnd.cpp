@@ -16,7 +16,7 @@ CGLWnd::~CGLWnd(void)
 {
 	wglMakeCurrent(NULL,NULL);
 	wglDeleteContext(m_RC);
-	m_RC = NULL;
+	m_RC = 0;
 }
 BEGIN_MESSAGE_MAP(CGLWnd, CWnd)
 	ON_WM_CREATE()
